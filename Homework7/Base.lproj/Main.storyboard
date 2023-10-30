@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFC-N3-M7y">
+                                <rect key="frame" x="102.66666666666669" y="194" width="188" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="Kyf-k8-STD"/>
+                                    <constraint firstAttribute="height" constant="38" id="wJA-fi-D8n"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Часнычныя грэнкі">
+                                    <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dish1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xN-vh-e8M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izy-Sx-crq">
+                                <rect key="frame" x="102.66666666666669" y="257" width="188" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="iQx-uI-pZ9"/>
+                                    <constraint firstAttribute="height" constant="38" id="oZO-5V-cnr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Рабрынкі">
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dish2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csM-dd-4Mg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-44-0LP">
+                                <rect key="frame" x="102.66666666666669" y="320" width="188" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="pqp-LI-SyT"/>
+                                    <constraint firstAttribute="height" constant="38" id="yy5-9n-B42"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Дранікі">
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dish3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieX-2g-tY0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yX-Ik-J5k">
+                                <rect key="frame" x="102.66666666666669" y="383" width="188" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="bee-KP-6lG"/>
+                                    <constraint firstAttribute="width" constant="188" id="vCA-vB-btN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Кава з малаком">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dish4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqu-8i-VIw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgw-9b-UPt">
+                                <rect key="frame" x="102.66666666666669" y="446" width="188" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="8zh-qq-svY"/>
+                                    <constraint firstAttribute="height" constant="38" id="zhD-XP-wBz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Сырнікі">
+                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dish5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rdt-ul-drg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLy-bg-y5p">
+                                <rect key="frame" x="128.66666666666666" y="534" width="135.99999999999997" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="OKb-dY-WcG"/>
+                                    <constraint firstAttribute="height" constant="35" id="iVb-wb-uCp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Закрыць змену">
+                                    <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeShift:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0r-Uf-2X8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выручка за змену : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpR-8s-vP7">
+                                <rect key="frame" x="119.33333333333333" y="594" width="154.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTV-Tc-JFE">
+                                <rect key="frame" x="196.66666666666666" y="640" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYo-cg-uAZ">
+                                <rect key="frame" x="128.66666666666666" y="109" width="135.99999999999997" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="TE8-qq-N4z"/>
+                                    <constraint firstAttribute="width" constant="136" id="U2V-e7-wtZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Пачаць змену">
+                                    <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startShift:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIV-Yy-iS3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZTV-Tc-JFE" firstAttribute="top" secondItem="BpR-8s-vP7" secondAttribute="bottom" constant="25" id="59Q-Mf-6rW"/>
+                            <constraint firstItem="sYo-cg-uAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bcv-7n-UuQ"/>
+                            <constraint firstItem="sYo-cg-uAZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="GJr-i7-N5b"/>
+                            <constraint firstItem="izy-Sx-crq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H7P-fv-ilU"/>
+                            <constraint firstItem="TFC-N3-M7y" firstAttribute="top" secondItem="sYo-cg-uAZ" secondAttribute="bottom" constant="50" id="O5Y-s9-3B5"/>
+                            <constraint firstItem="hLy-bg-y5p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W9L-FG-iTh"/>
+                            <constraint firstItem="TFC-N3-M7y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YnX-oO-WIH"/>
+                            <constraint firstItem="tZb-44-0LP" firstAttribute="top" secondItem="izy-Sx-crq" secondAttribute="bottom" constant="25" id="ZP7-1i-pKO"/>
+                            <constraint firstItem="hLy-bg-y5p" firstAttribute="top" secondItem="Fgw-9b-UPt" secondAttribute="bottom" constant="50" id="Znc-gL-fOJ"/>
+                            <constraint firstItem="Fgw-9b-UPt" firstAttribute="top" secondItem="5yX-Ik-J5k" secondAttribute="bottom" constant="25" id="caw-XZ-RsJ"/>
+                            <constraint firstItem="ZTV-Tc-JFE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fA3-96-VZa"/>
+                            <constraint firstItem="BpR-8s-vP7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nBY-gP-HC0"/>
+                            <constraint firstItem="5yX-Ik-J5k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ona-K4-a0S"/>
+                            <constraint firstItem="Fgw-9b-UPt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q3T-bA-oTy"/>
+                            <constraint firstItem="BpR-8s-vP7" firstAttribute="top" secondItem="hLy-bg-y5p" secondAttribute="bottom" constant="25" id="qQP-en-m02"/>
+                            <constraint firstItem="izy-Sx-crq" firstAttribute="top" secondItem="TFC-N3-M7y" secondAttribute="bottom" constant="25" id="qsa-Iw-WmG"/>
+                            <constraint firstItem="tZb-44-0LP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vpC-EF-0tL"/>
+                            <constraint firstItem="5yX-Ik-J5k" firstAttribute="top" secondItem="tZb-44-0LP" secondAttribute="bottom" constant="25" id="znC-bw-FBM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="totalRevenue" destination="ZTV-Tc-JFE" id="wLA-1k-UhQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
