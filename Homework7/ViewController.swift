@@ -11,9 +11,9 @@
 
 import UIKit
 
-class Singletone {
+class Singleton {
     
-    static let shared = Singletone()
+    static let shared = Singleton()
     private (set) var count: Double = 0.0
     private init() {}
     var menu = Menu(
@@ -22,17 +22,17 @@ class Singletone {
         mainMenu2: MainMenu2(name: "Дранікі", cost: 12.00),
         drinks: Drinks(name: "Кава з малаком", cost: 6.00),
         desserts: Desserts(name: "Сырнікі", cost: 7.00))
+    
     func nullficationCount() -> Double{
         count = 0.0
         return (count)
     }
-    func increaseCount(item : Double){
-        count += item
-        }
-    func printAllOrders(item : String){
-        print(item)
-        }
+    func countOrdersPrint (_ first: Double,to second: String) {
+        count += first
+        print("\(second) - \(first)")
     }
+
+}
 class Menu {
     
     var snacks : Dish
@@ -87,7 +87,6 @@ class Dish {
 
             }
         }
-    
 
         
 class ViewController: UIViewController {
@@ -103,7 +102,7 @@ class ViewController: UIViewController {
     // Label 
     
     @IBOutlet weak var totalRevenue: UILabel!
-    let restaurant = Singletone.shared
+    let restaurant = Singleton.shared
     
     
     
@@ -114,34 +113,29 @@ class ViewController: UIViewController {
     // конец смены
     @IBAction func closeShift(_ sender: UIButton) {
         totalRevenue.text = String("\(restaurant.count) BYN")
+        print ("Выручка за змену : \(restaurant.count) BYN")
     }
     
     // позиции
     
     @IBAction func dish1(_ sender: UIButton) {
-        restaurant.increaseCount(item: restaurant.menu.snacks.cost)
-        restaurant.printAllOrders(item: restaurant.menu.snacks.name)
+        restaurant.countOrdersPrint(restaurant.menu.snacks.cost, to: restaurant.menu.snacks.name)
     }
 
     @IBAction func dish2(_ sender: UIButton) {
-        restaurant.increaseCount(item: restaurant.menu.mainMenu.cost)
-        restaurant.printAllOrders(item: restaurant.menu.mainMenu.name)
+        restaurant.countOrdersPrint(restaurant.menu.mainMenu.cost, to: restaurant.menu.mainMenu.name)
     }
 
     @IBAction func dish3(_ sender: UIButton) {
-        restaurant.increaseCount(item: restaurant.menu.mainMenu2.cost)
-        restaurant.printAllOrders(item: restaurant.menu.mainMenu2.name)
+        restaurant.countOrdersPrint(restaurant.menu.mainMenu2.cost, to: restaurant.menu.mainMenu2.name)
     }
     
     @IBAction func dish4(_ sender: UIButton) {
-        restaurant.increaseCount(item: restaurant.menu.drinks.cost)
-        restaurant.printAllOrders(item: restaurant.menu.drinks.name)
+        restaurant.countOrdersPrint(restaurant.menu.drinks.cost, to: restaurant.menu.drinks.name)
     }
     
     @IBAction func dish5(_ sender: UIButton) {
-        restaurant.increaseCount(item: restaurant.menu.desserts.cost)
-        restaurant.printAllOrders(item: restaurant.menu.desserts.name)
-
+        restaurant.countOrdersPrint(restaurant.menu.desserts.cost, to: restaurant.menu.desserts.name)
     }
     }
     
