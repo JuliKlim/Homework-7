@@ -27,9 +27,9 @@ class Singleton {
         count = 0.0
         return (count)
     }
-    func countOrdersPrint (_ first: Double,to second: String) {
-        count += first
-        print("\(second) - \(first)")
+    func countOrdersPrint (_ item: Dish) {
+        count += item.cost
+        print("\(item.name) - \(item.cost)")
     }
 
 }
@@ -119,23 +119,23 @@ class ViewController: UIViewController {
     // позиции
     
     @IBAction func dish1(_ sender: UIButton) {
-        restaurant.countOrdersPrint(restaurant.menu.snacks.cost, to: restaurant.menu.snacks.name)
+        restaurant.countOrdersPrint(restaurant.menu.snacks)
     }
 
     @IBAction func dish2(_ sender: UIButton) {
-        restaurant.countOrdersPrint(restaurant.menu.mainMenu.cost, to: restaurant.menu.mainMenu.name)
+        restaurant.countOrdersPrint(restaurant.menu.mainMenu)
     }
 
     @IBAction func dish3(_ sender: UIButton) {
-        restaurant.countOrdersPrint(restaurant.menu.mainMenu2.cost, to: restaurant.menu.mainMenu2.name)
+        restaurant.countOrdersPrint(restaurant.menu.mainMenu2)
     }
     
     @IBAction func dish4(_ sender: UIButton) {
-        restaurant.countOrdersPrint(restaurant.menu.drinks.cost, to: restaurant.menu.drinks.name)
+        restaurant.countOrdersPrint(restaurant.menu.drinks)
     }
     
     @IBAction func dish5(_ sender: UIButton) {
-        restaurant.countOrdersPrint(restaurant.menu.desserts.cost, to: restaurant.menu.desserts.name)
+        restaurant.countOrdersPrint(restaurant.menu.desserts)
     }
     }
     
